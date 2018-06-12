@@ -1,0 +1,81 @@
+.slider {
+  position: relative;
+  width: 100%;
+  &-wrapper {
+    position: relative;
+    width: 100%;
+    //height: 100%;
+  }
+  &-pager {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    //display: none;
+    &-item {
+      width: 30px;
+      height: 30px;
+      border: 1px solid @textColorNav;
+      margin: 10px 0;
+      &_active {
+        background: @textColorNavHover;
+      }
+    }
+  }
+  &-control-buttons {
+    //position: absolute;
+    //z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    //top: 50%;
+    //transform: translate(0, -50%);
+    //left: 0;
+    .control {
+      height: 35px;
+      width: 35px;
+      background-color: @signatureBG;
+      //text-indent: 9999px;
+      //background-repeat: no-repeat;
+      //background-size: cover;
+      &:hover {
+        background-color: @btnHoverCarousel;
+      }
+      &-prev {
+        //background-image: url("../../../assets/images/sprite-icon.png");
+        //background-position: -375px 0;
+      }
+      &-next {
+        //background-image: url("../../../assets/images/sprite-icon.png");
+        //background-position: -409px 0;
+      }
+    }
+  }
+  .slide {
+    position: relative;
+    display: none;
+    animation-name: linear;
+    animation-duration: 1s;
+    width: 100%;
+    &.slide_active {
+      display: block;
+    }
+    a {
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes linear {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+

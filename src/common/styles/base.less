@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  src: url("../../../assets/fonts/Montserrat-Bold.ttf") format('ttf');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: url("../../../assets/fonts/Montserrat-Regular.ttf") format('ttf');
+}
+@font-face {
+  font-family: 'Hind';
+  font-weight: 300;
+  src: url("../../../assets/fonts/Hind-Light.ttf") format('ttf');
+}
+@font-face {
+  font-family: 'Hind';
+  font-weight: 400;
+  src: url("../../../assets/fonts/Hind-Regular.ttf") format('ttf');
+}
+@font-face {
+  font-family: 'Hind';
+  font-weight: 500;
+  src: url("../../../assets/fonts/Hind-Medium.ttf") format('ttf');
+}
+@font-face {
+  font-family: 'Hind';
+  font-weight: 600;
+  src: url("../../../assets/fonts/Hind-SemiBold.ttf") format('ttf');
+}
+@font-face {
+  font-family: 'Hind';
+  font-weight: 700;
+  src: url("../../../assets/fonts/Hind-Bold.ttf") format('ttf');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 300;
+  src: url("../../../assets/fonts/OpenSans-Light.ttf") format('ttf');
+}
+
+
+html {
+  font-family: 'Hind', Arial, Helvetica, sans-serif;
+  height: 100%;
+  min-height: 100%;
+  font-weight: 300;
+  //font-size: @html-size-base;
+  font-size: @font-size-16;
+}
+
+body, figure, h1, h2, h3, h4, ul, form, p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  //background-color: @contentBG;
+  background-color: @contentBG;
+}
+body>* {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.box-centered {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%
+}
+
+.page-wrapper {
+  //max-width: @pageWrapper;
+  max-width: @pageWrapper;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}

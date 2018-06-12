@@ -1,0 +1,40 @@
+
+.flexCentered {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.redBorder (@value) {
+  border: @value solid red;
+}
+
+.screen-xs(@content) {
+  @media only screen and (max-width: @screenXs) {
+    @content();
+  }
+}
+
+.screen-sm(@content) {
+  @media only screen and (min-width: @screenXs + 1) and (max-width: @screenSm) {
+    @content();
+  }
+}
+
+.screen-md(@content) {
+  @media only screen and (min-width: @screenSm+1) and (max-width: @screenMd) {
+    @content();
+  }
+}
+
+.screen-lg(@content) {
+  @media only screen and (min-width: @screenMd+1) and (max-width: @screenLg) {
+    @content();
+  }
+}
+
+.screen-xl(@content) {
+  @media only screen and (min-width: @screenLg+1) {
+    @content();
+  }
+}

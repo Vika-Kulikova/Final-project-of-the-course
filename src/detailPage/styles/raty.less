@@ -1,0 +1,15 @@
+.rating-container {
+  margin: 0 @margin-30;
+  .screen-lg-max ({ margin-right: 0; });
+  .screen-sm-max ({ width: 100%; margin: 0; justify-content: center; });
+  .rating {
+    cursor: pointer;
+    .rating-item {
+      color: @textColorNavHover;
+      font-size: @font-size-14;
+    }
+    .rating-item.active {
+      color: @textIcon;
+    }
+  }
+}

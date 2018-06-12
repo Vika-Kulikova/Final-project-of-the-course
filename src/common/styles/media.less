@@ -1,0 +1,111 @@
+@screen-400: 400px;
+@screen-xs-max: 480px;
+@screen-xs-min: (@screen-xs-max + 1);
+@screen-500: 500px;
+@screen-550: 550px;
+@screen-660: 660px;
+@screen-sm-max: 768px;
+@screen-sm-min: (@screen-sm-max + 1);
+@screen-md-max: 992px;
+@screen-md-min: (@screen-md-max + 1);
+@screen-lg-max: 1200px;
+@screen-lg-min: (@screen-lg-max + 1);
+@screen-big-max: 1529px;
+
+// 400 only
+.screen-400(@rules) {
+  @media only screen and (max-width: @screen-400) {
+    @rules();
+  }
+}
+
+// xs only
+.screen-xs(@rules) {
+  @media only screen and (max-width: @screen-xs-max) {
+    @rules();
+  }
+}
+
+// 500 only
+.screen-500(@rules) {
+  @media only screen and (max-width: @screen-500) {
+    @rules();
+  }
+}
+
+// 550 only
+.screen-550(@rules) {
+  @media only screen and (max-width: @screen-550) {
+    @rules();
+  }
+}
+
+.screen-xs-md(@rules) {
+  @media only screen and (max-width: @screen-660) {
+    @rules();
+  }
+}
+
+// sm only
+.screen-sm(@rules) {
+  @media (min-width: @screen-xs-min) and (max-width: @screen-sm-max) {
+    @rules();
+  }
+}
+
+// to sm only
+.screen-sm-max (@rules) {
+  @media only screen and (max-width: @screen-sm-max) {
+    @rules();
+  }
+}
+
+// md only
+.screen-md(@rules) {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+    @rules();
+  }
+}
+
+// to md only
+.screen-md-max (@rules) {
+  @media only screen and (max-width: @screen-md-max) {
+    @rules();
+  }
+}
+
+// lg only
+.screen-lg(@rules) {
+  @media (min-width: @screen-md-min) and (max-width: @screen-lg-max) {
+    @rules();
+  }
+}
+
+// to lg only
+.screen-lg-max (@rules) {
+  @media only screen and (max-width: @screen-lg-max) {
+    @rules();
+  }
+}
+
+// xl
+.screen-lg-max(@rules) {
+  @media (max-width: @screen-lg-min) {
+    @rules();
+  }
+}
+
+// from md to xxl
+.screen-md-xxl(@rules) {
+  @media (min-width: @screen-md-min) and (max-width: @screen-big-max) {
+    @rules();
+  }
+}
+
+// to xxl only
+.screen-big-max (@rules) {
+  @media only screen and (max-width: @screen-big-max) {
+    @rules();
+  }
+}
+

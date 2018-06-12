@@ -1,0 +1,37 @@
+.container-slider-post {
+  position: relative;
+  .slider-post {
+    margin-bottom: @margin-60;
+  }
+  .slider-control-buttons {
+    overflow: hidden;
+    .control {
+      width: 48.684210%;
+      border: none;
+      background-color: @signatureBG;
+      height: 136px;
+      font-weight: 500;
+      font-size: @font-size-14;
+      color: transparent;
+      text-transform: uppercase;
+      letter-spacing: @letter-spasing-200;
+      transition: all 0.3s;
+      .screen-550 ({ color: @textColorNav; height: 80px; });
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: @btnHoverCarousel;
+      }
+      &:first-child {
+        margin-right: @margin-30;
+      }
+    }
+  }
+  .slider-pager {
+    display: none;
+  }
+}
+
+
+

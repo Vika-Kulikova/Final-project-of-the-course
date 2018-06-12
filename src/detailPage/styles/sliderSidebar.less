@@ -1,0 +1,64 @@
+.sidebar-slider-box {
+  .slider-pager {
+    display: none;
+  }
+
+  .slider-control-buttons {
+    position: absolute;
+    //z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    .control {
+      height: 35px;
+      width: 35px;
+      background-color: @signatureBG;
+      text-indent: 9999px;
+      border: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all ease 0.3s;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: @btnHoverCarousel;
+      }
+      &-prev {
+        background-image: url("../../../assets/images/sprite-icon.png");
+        background-position: -375px 0;
+      }
+      &-next {
+        background-image: url("../../../assets/images/sprite-icon.png");
+        background-position: -409px 0;
+      }
+    }
+  }
+  .slide {
+    position: relative;
+    display: none;
+    animation-name: linear;
+    animation-duration: 1s;
+    width: 100%;
+    &.slide_active {
+      display: block;
+    }
+    a {
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes linear {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

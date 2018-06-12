@@ -1,0 +1,107 @@
+.carousel-gallery {
+  position: relative;
+  width: 100%;
+  padding: @padding-30 @padding-30;
+  margin-bottom: @margin-120;
+  background-color: @postBG;
+  box-shadow: 0 0 1px rgba(232, 232, 232, 0.9);
+  //&-title-flex {
+  //  display: flex;
+  //  justify-content: space-between;
+  //}
+  &-title {
+    margin-bottom: @margin-30;
+    h2 {
+      .montserratFont;
+      font-size: @font-size-20;
+      letter-spacing: @letter-spasing-100;
+    }
+  }
+  .gallery-control-buttons {
+    display: flex;
+    position: absolute;
+    top: @padding-30;
+    right: @padding-30;
+    .screen-500 ({
+      position: static; margin-top: @margin-30;
+    });
+    .control {
+      height: 30px;
+      width: 30px;
+      padding: 0;
+      text-indent: 9999px;
+      background-color: @signatureBG;
+      border: none;
+      transition: all ease 0.3s;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: @btnHoverCarousel;
+      }
+      &-prev {
+        background-image: url("../../../assets/images/sprite-icon.png");
+        background-position: -268px 0;
+        margin-right: @margin-05;
+      }
+      &-next {
+        background-image: url("../../../assets/images/sprite-icon.png");
+        background-position: -293px 0;
+      }
+    }
+  }
+  .carousel-gallery-content {
+    width: 100%;
+    overflow: hidden;
+    //height: 218px;
+    .gallery-slides {
+      width: 2560px;
+      transition: all ease 1s;
+      &:after {
+        content: '';
+        clear: both;
+        display: block;
+      }
+      .gallery-slide {
+        //display: inline-block;
+        position: relative;
+        float: left;
+        margin-right: @margin-30;
+        cursor: pointer;
+        &:hover img {
+          transform: scale(1.1);
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.gallery-slide-content {
+  .slide-image {
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transition: all ease 0.5s;
+    }
+  }
+
+  h3 {
+    .montserratFont;
+    font-size: @font-size-16;
+    letter-spacing: @letter-spasing-100;
+    text-align: center;
+    padding-top: @padding-05;
+  }
+}
+
+
+
+
+

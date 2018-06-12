@@ -1,0 +1,192 @@
+.sidebar-detailPage {
+  width: 23.529411%;
+  margin-left: @margin-30;
+  background-color: @postBG;
+  box-shadow: 0 0 1px rgba(232, 232, 232, 0.9);
+  padding: @padding-40 @padding-30;
+  margin-bottom: @margin-120;
+  img {
+    width: 100%;
+  }
+  .screen-md-max ({ box-shadow: 2px 5px 11px 5px rgba(183, 183, 183, 0.9); position: absolute; top: 0; left: 0; width: 360px; transform: translateX(-101%); transition: all 0.3s; &:hover {
+    transform: translateX(-9%);
+  } });
+
+}
+
+.sidebar-search {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin-bottom: @margin-40;
+
+  .search {
+    width: 83.3333%;
+    height: 100%;
+    padding: @padding-1;
+    color: @submitBG;
+    text-transform: uppercase;
+    font-size: @font-size-16;
+    letter-spacing: @letter-spasing-100;
+    background-color: @contentBG;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    &:focus, &:hover {
+      box-shadow: 0 0 1px rgba(204, 204, 204, 0.9);
+    }
+  }
+  .submit-form {
+    width: 50px;
+    height: 100%;
+    background-color: @submitBG;
+    color: @textColorNav;
+    font-size: @font-size-16;
+    outline: none;
+    transition: all 0.3s;
+    &:hover {
+      background-color: @signatureBG;
+    }
+  }
+}
+
+.sidebar-block-advertising {
+  margin-bottom: @margin-30;
+}
+
+.sidebar-block-categories {
+  width: 100%;
+  text-align: center;
+}
+
+.categories-title {
+  h2 {
+    .montserratFont;
+    font-size: @font-size-20;
+    letter-spacing: @letter-spasing-100;
+    padding-bottom: @padding-1;
+  }
+}
+
+.categories {
+  text-align: left;
+  margin-bottom: @margin-40;
+  &-item {
+    border-top: 1px solid @headerLightBG;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transition: all ease 0.3s;
+    a {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-top: @padding-1;
+      padding-bottom: @padding-1;
+      color: @textColorHDark;
+    }
+  }
+  &-item:last-child {
+    border-bottom: 1px solid @headerLightBG;
+  }
+  &-item:hover {
+    background-color: @contentBG;
+    border-left: 1px solid @headerLightBG;
+    border-right: 1px solid @headerLightBG;
+  }
+}
+
+.sidebar-block-posts {
+  margin-bottom: @margin-40;
+  &-title {
+    .montserratFont;
+    font-size: @font-size-20;
+    letter-spacing: @letter-spasing-100;
+    text-align: center;
+  }
+}
+
+.post-content {
+  border-bottom: 1px solid @headerLightBG;
+  padding-bottom: @padding-1;
+  padding-top: @padding-1;
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  &-image {
+    width: 80px;
+    height: 60px;
+    margin-right: @margin-05;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    .screen-lg ({ display: none; });
+  }
+  &-image-01 {
+    background-image: url("../../../assets/images/latestPost/img-01.jpg");
+  }
+  &-image-02 {
+    background-image: url("../../../assets/images/latestPost/img-02.jpg");
+  }
+  &-image-03 {
+    background-image: url("../../../assets/images/latestPost/img-03.jpg");
+  }
+  &-image-04 {
+    background-image: url("../../../assets/images/latestPost/img-04.jpg");
+  }
+  &-details {
+    margin-top: -5px;
+    h3 {
+      padding-bottom: 5px;
+      a {
+        .montserratFont;
+        font-size: @font-size-16;
+        line-height: 22px;
+        letter-spacing: @letter-spasing-100;
+        color: @textColorHDark;
+        transition: all ease 0.3s;
+        &:hover {
+          color: @textColorNavHover;
+        }
+      }
+    }
+    .post-info-details {
+      display: flex;
+      justify-content: space-between;
+      .post-info {
+        color: @textColorNavHover;
+        text-transform: uppercase;
+        font-size: @font-size-14;
+      }
+    }
+  }
+}
+
+.sidebar-block-social-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: @margin-40;
+  a {
+    font-size: @font-size-20;
+    color: @textIcon;
+
+    transition: all ease 0.3s;
+    &:hover {
+      color: @textColorNavHover;
+    }
+  }
+}
+
+.facebook-plagin {
+  background-image: url("../../../assets/images/facebook.jpg");
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: @margin-40;
+}
+
